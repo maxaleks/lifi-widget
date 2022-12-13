@@ -68,7 +68,7 @@ export const SelectWalletPage = () => {
           >
             <ListItemAvatar>
               <Avatar
-                src={(wallet.icon as any).src || wallet.icon}
+                {(wallet.icon as any).src || wallet.icon}
                 alt={wallet.name}
               >
                 {wallet.name[0]}

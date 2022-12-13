@@ -38,7 +38,11 @@ export const SelectChainPage: React.FC<SelectChainPageProps> = ({
             disableRipple
           >
             <ListItemAvatar>
-              <Avatar src={chain.logoURI} alt={chain.name}>
+              <Avatar
+                src={chain.logoURI}
+                alt={chain.name}
+                imgProps={{ crossOrigin: 'anonymous' }}
+              >
                 {chain.name[0]}
               </Avatar>
             </ListItemAvatar>

@@ -104,6 +104,7 @@ export const TokenBase: React.FC<TokenProps & BoxProps> = ({
                   border: 0,
                   marginBottom: -0.25,
                 }}
+                imgProps={{ crossOrigin: 'anonymous' }}
               >
                 {step.toolDetails.name[0]}
               </SmallAvatar>

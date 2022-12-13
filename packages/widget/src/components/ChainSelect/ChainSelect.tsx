@@ -64,6 +64,7 @@ export const ChainSelect = ({ formType }: SwapFormTypeProps) => {
                   src={chain.logoURI}
                   alt={chain.key}
                   sx={{ width: 40, height: 40 }}
+                  imgProps={{ crossOrigin: 'anonymous' }}
                 >
                   {chain.name[0]}
                 </Avatar>

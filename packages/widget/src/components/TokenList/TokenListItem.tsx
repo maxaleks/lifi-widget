@@ -56,7 +56,11 @@ export const TokenListItemButton: React.FC<TokenListItemButtonProps> = ({
   return (
     <ListItemButton onClick={onClick} dense disableRipple>
       <ListItemAvatar>
-        <Avatar src={token.logoURI} alt={token.symbol}>
+        <Avatar
+          src={token.logoURI}
+          alt={token.symbol}
+          imgProps={{ crossOrigin: 'anonymous' }}
+        >
           {token.symbol[0]}
         </Avatar>
       </ListItemAvatar>

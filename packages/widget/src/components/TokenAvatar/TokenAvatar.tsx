@@ -36,7 +36,11 @@ export const TokenAvatarBase: React.FC<{
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       badgeContent={
         chain ? (
-          <SmallAvatar src={chain.logoURI} alt={chain.name}>
+          <SmallAvatar
+            src={chain.logoURI}
+            alt={chain.name}
+            imgProps={{ crossOrigin: 'anonymous' }}
+          >
             {chain.name[0]}
           </SmallAvatar>
         ) : (
@@ -48,7 +52,11 @@ export const TokenAvatarBase: React.FC<{
       {isLoading ? (
         <Skeleton width={32} height={32} variant="circular" />
       ) : (
-        <Avatar src={token.logoURI} alt={token.symbol}>
+        <Avatar
+          src={token.logoURI}
+          alt={token.symbol}
+          imgProps={{ crossOrigin: 'anonymous' }}
+        >
           {token.symbol[0]}
         </Avatar>
       )}

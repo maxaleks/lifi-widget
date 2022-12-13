@@ -85,6 +85,7 @@ const ConnectedButton = () => {
             src={chain?.logoURI}
             alt={chain?.key}
             sx={{ width: 24, height: 24 }}
+            imgProps={{ crossOrigin: 'anonymous' }}
           >
             {chain?.name[0]}
           </Avatar>

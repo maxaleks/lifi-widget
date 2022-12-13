@@ -39,6 +39,7 @@ export const StepActions: React.FC<StepActionsProps> = ({
         sx={{
           boxSizing: 'content-box',
         }}
+        imgProps={{ crossOrigin: 'anonymous' }}
       >
         {tool.toolDetails.name[0]}
       </SmallAvatar>
@@ -55,6 +56,7 @@ export const StepActions: React.FC<StepActionsProps> = ({
           variant="circular"
           src={step.type !== 'lifi' ? step.toolDetails.logoURI : undefined}
           alt={step.toolDetails.name}
+          imgProps={{ crossOrigin: 'anonymous' }}
         >
           {step.type === 'lifi' ? <LiFiToolLogo /> : step.toolDetails.name[0]}
         </StepAvatar>
