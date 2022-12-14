@@ -248,6 +248,9 @@ export const createTheme = (mode: PaletteMode, theme: ThemeConfig = {}) => {
         },
       },
       MuiAvatar: {
+        defaultProps: {
+          imgProps: { crossOrigin: 'anonymous' },
+        },
         styleOverrides: {
           root: {
             height: 32,
